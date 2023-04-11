@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.flexClass{
+    display: flex;
+    align-items: center;
+    
+}
+.flexClass img{
+    width: 5vw;
+    height: auto;
+    margin: 0 0 20px 0;
+    display: inline-block;
+}
+
+.options ul li{
+    display: inline-block;
+    padding: 0 1vw;
+}
+
+.options ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.options ul li a:hover{
+    font-weight: bold;
+}
+.signUp{
+    margin: 1vh 2vw;
+    color: white;
+    background-color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding: 10px 11px;
+    border-radius: 5px;
+}
+
+.logOut{
+    margin: 1vh 2vw;
+    color: white;
+    background-color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding: 10px 11px;
+    border-radius: 5px;
+}
+
+.Poster{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+#numberClass{
+    padding: 3vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+.paper{
+    padding: 2vh 0;
+    color: white;
+    height: 30vh;
+    background-color: rgb(12, 12, 12);
+    width: 20vw;
+    margin: 1vh 2vw;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.paper-head{
+    font-size: 20px;
+}
+
+.paper-number{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  .c1 {
+    animation: counter 5s ease-in-out forwards;
+    counter-reset: num var(--num);
+    /* font: 800 40px system-ui; */
+    padding: 0;
+  }
+  .c1::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 150;
+    }
+    
+  }
+
+  .c2 {
+    animation: counter1 5s ease-in-out forwards;
+    counter-reset: num var(--num);
+    /* font: 800 40px system-ui; */
+    padding: 0;
+  }
+  .c2::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter1 {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 150000;
+    }
+    
+  }
+
+  .c3 {
+    animation: counter2 5s ease-in-out forwards;
+    counter-reset: num var(--num);
+    /* font: 800 40px system-ui; */
+    padding: 0;
+  }
+  .c3::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter2 {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 300000;
+    }
+    
+  }
+  .btn{
+    margin: 1vh 0;
+    color: white;
+    background-color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding: 10px 11px;
+    border-radius: 5px;
+}
+
+.rightCorner{
+    display: flex;
+    align-items: center;
+}

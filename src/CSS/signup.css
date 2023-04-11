@@ -1,0 +1,73 @@
+.SignUpOuter{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUpMain{
+    text-align: center;
+    border: 2px solid black;
+    padding: 2vh 2vw;
+    border-radius: 5px;
+}
+
+.Logo{
+    padding: 0;
+    margin: 0;
+}
+
+.LogoName p{
+    margin: 0 0 3vh;
+    font-size: smaller;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.input{
+    margin: 2vh 0;
+    padding: 1vh 0.5vw;
+    width: 20vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.FormClass form select{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 2vh 0;
+    padding: 1vh 0.5vw;
+    width: 20vw;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.Button{
+    margin: 2vh 0;
+    width: 20vw;
+    color: white;
+    background-color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding: 2vh 0.5vw;
+    border-radius: 5px;
+}
+
+.Footer{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.Footer a{
+    text-decoration: none;
+}
+
+.Error{
+    background-color: #d60202;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 0.5vh 1vw;
+    margin: 1vh 0 2vh 0;
+    border-radius: 4px;
+}

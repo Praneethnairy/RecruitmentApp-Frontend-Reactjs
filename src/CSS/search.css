@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .body{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+} */
+
+
+
+/* .searchItem{
+    font-family: 'Quicksand', sans-serif;
+} */
+.searchList {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .searchItem {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .titleFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .titleFlex h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .titleFlex p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .location p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .time {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .time pre {
+    margin: 0;
+    font-size: 12px;
+    color: #999;
+  }
+  
+
+/* .titleFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+}
+.searchList div p{
+    text-align: left;
+}
+.searchList div pre{
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+}
+.searchList{
+    margin: 1vh 2vw;
+    padding: 2vh 2vw;
+    background-color: rgba(223, 221, 221, 0.5);
+    border-radius: 5px;
+}
+
+.location{
+    margin: 5px 0;
+    font-size: large;
+}
+.time{
+    font-size: medium;
+    display: flex;
+    align-items: center;
+
+} */
+
+.searchForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 2vw;
+    width: 100%;
+}
+
+.searchForm img{
+  width: 5vw;
+    height: auto;
+    margin: 0 0 20px 0;
+    display: inline-block;
+}
+
+.searchForm input[type="text"] {
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: 100%;
+    max-width: 30vw;
+}
+
+.searchForm button[type="submit"] {
+    padding: 15px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.rightC{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.applyJobButton{
+  background-color: green;
+  color: white;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 5px;
+  padding: 1.5vh 1.5vw;
+  margin: 3vh 2vw;
+}
+
+.closeDialog{
+  background-color: red;
+  color: white;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 5px;
+  padding: 1.5vh 1.5vw;
+  margin: 3vh 0;
+}
+
+.abstractClass{
+  margin: 3vh 0;
+}
+
+#abstarctHead{
+  margin: 0 0 1vh 0;
+  font-size: 22px;
+}
+
+#skillReqHead{
+  margin: 0 0 1vh 0;
+  font-size: 22px;
+}
+.borders{
+  box-shadow: 0px 3px 8px 2px #888888;
+}

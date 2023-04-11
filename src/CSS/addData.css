@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.addDataContainer{
+    margin: 1vh 0 1vh 0;
+    padding: 2vh 2vw;
+    /* border: 2px solid black; */
+    text-align: center;
+    border-radius: 5px;
+    background-color: #724cb2;
+    color: white;
+}
+
+.addDataContainer:hover{
+    opacity: 0.8;
+}
