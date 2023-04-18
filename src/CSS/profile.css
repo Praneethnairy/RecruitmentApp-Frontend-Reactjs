@@ -223,3 +223,28 @@
   margin: 0;
   margin-bottom: 10px;
 }
+
+
+textarea {
+  margin-bottom: 2vh;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.4;
+  width: 97%;
+  height: 20vh;
+
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+#skill{
+  padding: 2vh 1vw;
+  width: 80%;
+  margin: 0 2vw 0 0;
+}

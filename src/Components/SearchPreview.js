@@ -8,6 +8,9 @@ export default function (props) {
     const closeDialog = ()=>{
         setClickedPost(false);
     };
+    const applyJob = () =>{
+        console.log('Apply Job')
+    }
     useEffect(()=>{},[clickedPost]);
   return (
     <div>
@@ -48,7 +51,7 @@ export default function (props) {
                             <p>{props.search.abstract}</p>
                         </div>
                     </div>
-                    <div style={{width:"100%",textAlign:"center"}}><button className='applyJobButton'>Apply</button> <button className='closeDialog' onClick={closeDialog}>Close Dialog</button></div>
+                    <div style={{width:"100%",textAlign:"center"}}>{localStorage.getItem("userType") === "1"?<button className='applyJobButton' onClick={applyJob}>Apply</button>:<></> }<button className='closeDialog' onClick={closeDialog}>Close Dialog</button></div>
                 </div>
                 </div>
             </div>
