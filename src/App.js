@@ -8,6 +8,8 @@ import SignUp from './Components/SignUp';
 import Profile from './Components/Profile';
 import axios from 'axios';
 import MainProfile from './Components/MainProfile';
+import JobStatus from './Components/JobStatus';
+import JobApplications from './Components/JobApplications';
 
 function App() {
   const [checkUser,setCheckUser] = useState(false);
@@ -52,6 +54,8 @@ function App() {
           <Route exact path="/signIn" element={<PublicOutlet Page={SignIn}/>}/>
           <Route exact path="/search" element={<Search setNav = {setNav}/>}/>
           <Route exact path="/profile" element={<PrivateOutlet Page={MainProfile}/>}/>
+          <Route exact path="/status" element={<PrivateOutlet Page={JobStatus}/>}/>
+          <Route exact path="/applications" element={<PrivateOutlet Page={JobApplications}/>}/>
         </Routes>
       </Router>
     </div>

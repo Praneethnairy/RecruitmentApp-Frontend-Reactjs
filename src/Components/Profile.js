@@ -52,6 +52,14 @@ export default function Profile() {
             // alert('File Uploaded!!');
             getDownloadURL(snapshot.ref).then((url)=>{
                 setPdf(url);
+                const required = {
+                    uid: localStorage.getItem('userId'),
+                    path : `ApplicantResume/${localStorage.getItem('userId')}/${filename.name}`
+                }
+                axios.post('http://localhost:8082/profile/resumePath',required).then(res=>{
+                    console.log("done");
+                })
+                // localStorage.setItem('resumePDF', url);
             })
         })
     };
@@ -64,6 +72,14 @@ export default function Profile() {
             // alert('success')
             setPdf(null);
             setFname("");
+            const required = {
+                uid: localStorage.getItem('userId'),
+                path : null
+            }
+            axios.post('http://localhost:8082/profile/resumePath',required).then(res=>{
+                console.log("done");
+            })
+            // localStorage.clear('resumePDF');
         }).catch((e)=>{throw e})
     }
     useEffect(()=>{
@@ -81,7 +97,7 @@ export default function Profile() {
                 utype:localStorage.getItem('userType')
             };
 
-            axios.post('http://localhost:8082/getProfileData',required).then(res=>{
+            axios.post('http://localhost:8082/profile/getProfileData',required).then(res=>{
                 console.log(res.data);
                 setUserData(res.data);
                 setUDataFetched(true);
@@ -90,7 +106,7 @@ export default function Profile() {
                 console.log(err);
             })
         }
-        axios.get('http://localhost:8082/fetchAllSkills').then(res=>{
+        axios.get('http://localhost:8082/profile/fetchAllSkills').then(res=>{
             setSkills(res.data);
         })
     },[userData,pdf,isClicked,uDataFetched,loading,changeAbout,changeSkill,chipDataFlag]);
@@ -126,7 +142,7 @@ export default function Profile() {
             uemail:localStorage.getItem('userEmail'),
             uabout:changedAbt
         };
-        axios.post('http://localhost:8082/updateUserAbout',required).then(res=>{
+        axios.post('http://localhost:8082/profile/updateUserAbout',required).then(res=>{
             setUserData(res.data);
             setChangeAbout(false);
         })
@@ -164,7 +180,7 @@ export default function Profile() {
             skills : changedChipData
         }
         setLoading(true);
-        axios.post('http://localhost:8082/updateSkill',required).then(res=>{
+        axios.post('http://localhost:8082/profile/updateSkill',required).then(res=>{
             setUserData(res.data);
             setChangeSkill(false);
             setChangedChipData([]);

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../Images/logo1.png';
 import {auth} from '../Firebase';
 import { signOut } from 'firebase/auth';
+
 
 export default function NavBar(props) {
     const navigate = useNavigate();
@@ -20,6 +21,7 @@ export default function NavBar(props) {
     const SearchClicked = () =>{
         navigate('/search');
     }
+    
   return (
     <div className="navbar">
             <div className="flexClass">
@@ -27,8 +29,8 @@ export default function NavBar(props) {
                 {props.userCheck?<div className="options" id="option">
                     <ul>
                         <li><Link to="./">Dashboard</Link></li>
-                        <li><Link to="./status">Job Status</Link></li>
-                        <li><Link to="./profile">Profile</Link></li>
+                        {localStorage.getItem("userType") === "1"?<li><Link to="./status">Job Status</Link></li>:<li><Link to="./applications">Job Applications</Link></li>}
+                        {localStorage.getItem("userType") === "1"?<li><Link to="./profile">Profile</Link></li>:<></>}
                     </ul>
                 </div>:<></>}
             </div>

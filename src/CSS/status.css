@@ -1,0 +1,63 @@
+.jobMainHeader {
+    
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .jobMainHeader h3 {
+    margin: 0;
+  }
+  
+  .appliedJob {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 2vh 25vw;
+    padding: 2vh 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .jobMainHeader + .appliedJob {
+    margin-top: 10px;
+  }
+  
+  .appliedJob p {
+    margin: 0;
+  }
+  
+  .appliedJob .jobInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .appliedJob .jobInfo p {
+    margin-right: 10px;
+  }
+  
+  .appliedJob .status {
+    font-size: 14px;
+  }
+  
+  .appliedJob button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .appliedJob button:hover {
+    background-color: rgb(239, 57, 57);
+  }
+  .appliedJob:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
+  .scroller::-webkit-scrollbar {
+    display: none; /* hide the scrollbar */
+  }

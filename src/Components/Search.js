@@ -12,7 +12,7 @@ export default function Search(props) {
     useEffect(()=>{
         props.setNav(false);
         if(fetched === false){
-            axios.get("http://localhost:8082/searchResults").then(res=>{
+            axios.get("http://localhost:8082/search/searchResults").then(res=>{
                 setCompleteData(res.data);
                 // console.log(res.data);
                 setFetched(true);
